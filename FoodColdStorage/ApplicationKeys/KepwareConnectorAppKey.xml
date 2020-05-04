@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ build="b222"
+ majorVersion="8"
+ minorVersion="5"
+ modelPersistenceProviderPackage="PostgresPersistenceProviderPackage"
+ revision="4"
+ schemaVersion="1053"
+ universal="password">
+    <ApplicationKeys>
+        <ApplicationKey
+         clientName=""
+         description=""
+         documentationContent=""
+         expirationDate="2023-07-19T14:40:00.000Z"
+         homeMashup=""
+         ipWhitelist=""
+         keyId=""
+         name="KepwareConnectorAppKey"
+         projectName="FoodColdStorage"
+         tags=""
+         userNameReference="Administrator">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions></RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility></Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+        </ApplicationKey>
+    </ApplicationKeys>
+</Entities>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ build="b222"
+ majorVersion="8"
+ minorVersion="5"
+ modelPersistenceProviderPackage="PostgresPersistenceProviderPackage"
+ revision="4"
+ schemaVersion="1053"
+ universal="password">
+    <ThingTemplates>
+        <ThingTemplate
+         baseThingTemplate="GenericThing"
+         description=""
+         documentationContent=""
+         effectiveThingPackage="ConfiguredThing"
+         homeMashup=""
+         name="WeatherForcast_TT"
+         projectName="FoodColdStorage"
+         tags=""
+         thingPackage=""
+         valueStream="">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions></RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility>
+                    <Principal
+                     isPermitted="true"
+                     name="AG_HOwnerOrg"
+                     type="Organization"></Principal>
+                    <Principal
+                     isPermitted="true"
+                     name="C_FOwnerOrg"
+                     type="Organization"></Principal>
+                    <Principal
+                     isPermitted="true"
+                     name="CargillOwnerOrg"
+                     type="Organization"></Principal>
+                    <Principal
+                     isPermitted="true"
+                     name="TFBVOwnerOrg"
+                     type="Organization"></Principal>
+                </Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+            <PropertyBindings></PropertyBindings>
+            <RemotePropertyBindings></RemotePropertyBindings>
+            <RemoteServiceBindings></RemoteServiceBindings>
+            <RemoteEventBindings></RemoteEventBindings>
+            <AlertConfigurations>
+                <AlertDefinitions
+                 name="GPS"></AlertDefinitions>
+                <AlertDefinitions
+                 name="Location"></AlertDefinitions>
+            </AlertConfigurations>
+            <ThingShape>
+                <PropertyDefinitions>
+                    <PropertyDefinition
+                     aspect.cacheTime="0.0"
+                     aspect.dataChangeType="VALUE"
+                     aspect.isLogged="false"
+                     aspect.isPersistent="true"
+                     baseType="LOCATION"
+                     category=""
+                     description=""
+                     isLocalOnly="false"
+                     name="GPS"
+                     ordinal="2"></PropertyDefinition>
+                    <PropertyDefinition
+                     aspect.cacheTime="0.0"
+                     aspect.dataChangeType="VALUE"
+                     aspect.isPersistent="true"
+                     baseType="STRING"
+                     category=""
+                     description=""
+                     isLocalOnly="false"
+                     name="Location"
+                     ordinal="3"></PropertyDefinition>
+                </PropertyDefinitions>
+                <ServiceDefinitions>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="UpdateWeatherInfo">
+                        <ResultType
+                         baseType="JSON"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                </ServiceDefinitions>
+                <EventDefinitions></EventDefinitions>
+                <ServiceMappings></ServiceMappings>
+                <ServiceImplementations>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="UpdateWeatherInfo">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        //http://api.weatherstack.com/current?access_key=7cd3afb02b1c7b0d2e2479c028a5bb5a&query=Paris 
+                                        var url = "http://api.weatherstack.com/current?access_key=7cd3afb02b1c7b0d2e2479c028a5bb5a&query=" + me.Location
+                                        var params = {
+                                        	proxyScheme: undefined /* STRING */,
+                                        	headers: undefined /* JSON */,
+                                        	ignoreSSLErrors: undefined /* BOOLEAN */,
+                                        	useNTLM: undefined /* BOOLEAN */,
+                                        	workstation: undefined /* STRING */,
+                                        	useProxy: undefined /* BOOLEAN */,
+                                        	withCookies: undefined /* BOOLEAN */,
+                                        	proxyHost: undefined /* STRING */,
+                                        	url: url /* STRING */,
+                                        	timeout: undefined /* NUMBER */,
+                                        	proxyPort: undefined /* INTEGER */,
+                                        	password: undefined /* STRING */,
+                                        	domain: undefined /* STRING */,
+                                        	username: undefined /* STRING */
+                                        };
+                                        
+                                        // result: JSON
+                                        var result = Resources["ContentLoaderFunctions"].GetJSON(params);
+                                        
+                                        me.Temperature = result.current.temperature
+                                        me.Humidity = result.current.humidity
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                </ServiceImplementations>
+                <Subscriptions>
+                    <Subscription
+                     description=""
+                     enabled="true"
+                     eventName="Timer"
+                     name="UpdateWeather"
+                     source="WeatherTimer"
+                     sourceProperty=""
+                     sourceType="Thing">
+                        <ServiceImplementation
+                         description=""
+                         handlerName="Script"
+                         name="UpdateWeather">
+                            <ConfigurationTables>
+                                <ConfigurationTable
+                                 description=""
+                                 isMultiRow="false"
+                                 name="Script"
+                                 ordinal="0">
+                                    <DataShape>
+                                        <FieldDefinitions>
+                                            <FieldDefinition
+                                             baseType="STRING"
+                                             description="code"
+                                             name="code"
+                                             ordinal="0"></FieldDefinition>
+                                        </FieldDefinitions>
+                                    </DataShape>
+                                    <Rows>
+                                        <Row>
+                                            <code>
+                                            <![CDATA[
+                                            if (Things["UtilThing"].enableWeatherCheck) {
+                                                me.UpdateWeatherInfo()
+                                            }
+                                            ]]>
+                                            </code>
+                                        </Row>
+                                    </Rows>
+                                </ConfigurationTable>
+                            </ConfigurationTables>
+                        </ServiceImplementation>
+                    </Subscription>
+                </Subscriptions>
+            </ThingShape>
+            <ImplementedShapes>
+                <ImplementedShape
+                 name="BasicProperties_TS"
+                 type="ThingShape"></ImplementedShape>
+            </ImplementedShapes>
+            <SharedConfigurationTables></SharedConfigurationTables>
+            <InstanceDesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </InstanceDesignTimePermissions>
+            <InstanceRunTimePermissions></InstanceRunTimePermissions>
+            <InstanceVisibilityPermissions>
+                <Visibility>
+                    <Principal
+                     isPermitted="true"
+                     name="TFBVOwnerOrg"
+                     type="Organization"></Principal>
+                </Visibility>
+            </InstanceVisibilityPermissions>
+        </ThingTemplate>
+    </ThingTemplates>
+</Entities>

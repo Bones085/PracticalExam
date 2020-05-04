@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ build="b222"
+ majorVersion="8"
+ minorVersion="5"
+ modelPersistenceProviderPackage="PostgresPersistenceProviderPackage"
+ revision="4"
+ schemaVersion="1053"
+ universal="password">
+    <ModelTags>
+        <ModelTagVocabulary
+         description=""
+         documentationContent=""
+         homeMashup=""
+         isDynamic="false"
+         name="FoodColdStorage"
+         projectName="FoodColdStorage"
+         tags="">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions></RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility></Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+            <VocabularyTerm
+             description=""
+             name="Trigon_Food_BV"></VocabularyTerm>
+            <VocabularyTerm
+             description=""
+             name="Cotswold_Fayre"></VocabularyTerm>
+            <VocabularyTerm
+             description=""
+             name="Cargill"></VocabularyTerm>
+            <VocabularyTerm
+             description=""
+             name="AG_Holland"></VocabularyTerm>
+        </ModelTagVocabulary>
+    </ModelTags>
+</Entities>

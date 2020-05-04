@@ -1,0 +1,2000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ build="b222"
+ majorVersion="8"
+ minorVersion="5"
+ modelPersistenceProviderPackage="PostgresPersistenceProviderPackage"
+ revision="4"
+ schemaVersion="1053"
+ universal="password">
+    <Things>
+        <Thing
+         description=""
+         documentationContent=""
+         effectiveThingPackage="ConfiguredThing"
+         enabled="true"
+         homeMashup=""
+         identifier=""
+         name="UtilThing"
+         projectName="FoodColdStorage"
+         published="false"
+         tags=""
+         thingTemplate="GenericThing"
+         valueStream="">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions>
+                <Permissions
+                 resourceName="*">
+                    <PropertyRead>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVVegetableGroup"
+                         type="Group"></Principal>
+                    </PropertyRead>
+                    <PropertyWrite>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVVegetableGroup"
+                         type="Group"></Principal>
+                    </PropertyWrite>
+                    <ServiceInvoke>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVVegetableGroup"
+                         type="Group"></Principal>
+                    </ServiceInvoke>
+                    <EventInvoke>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVVegetableGroup"
+                         type="Group"></Principal>
+                    </EventInvoke>
+                    <EventSubscribe>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="AG_HVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="C_FVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="CargillVegetableGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVFruitGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVMeatGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVOwnerGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVVegetableGroup"
+                         type="Group"></Principal>
+                    </EventSubscribe>
+                </Permissions>
+            </RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility>
+                    <Principal
+                     isPermitted="true"
+                     name="AG_HOwnerOrg"
+                     type="Organization"></Principal>
+                    <Principal
+                     isPermitted="true"
+                     name="C_FOwnerOrg"
+                     type="Organization"></Principal>
+                    <Principal
+                     isPermitted="true"
+                     name="CargillOwnerOrg"
+                     type="Organization"></Principal>
+                    <Principal
+                     isPermitted="true"
+                     name="TFBVOwnerOrg"
+                     type="Organization"></Principal>
+                </Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+            <ThingShape>
+                <PropertyDefinitions>
+                    <PropertyDefinition
+                     aspect.cacheTime="0.0"
+                     aspect.dataChangeType="VALUE"
+                     aspect.dataShape="GenericStringList"
+                     aspect.defaultValue="{&quot;rows&quot;:[{&quot;item&quot;:&quot;AG_Holland&quot;},{&quot;item&quot;:&quot;Cargill&quot;},{&quot;item&quot;:&quot;Cotswold_Fayre&quot;},{&quot;item&quot;:&quot;Trigon_Food_BV&quot;}],&quot;dataShape&quot;:{&quot;fieldDefinitions&quot;:{&quot;item&quot;:{&quot;name&quot;:&quot;item&quot;,&quot;aspects&quot;:{&quot;isPrimaryKey&quot;:true},&quot;description&quot;:&quot;Item&quot;,&quot;baseType&quot;:&quot;STRING&quot;,&quot;ordinal&quot;:0}}}}"
+                     aspect.isPersistent="true"
+                     baseType="INFOTABLE"
+                     category=""
+                     description=""
+                     isLocalOnly="false"
+                     name="clients"
+                     ordinal="4"></PropertyDefinition>
+                    <PropertyDefinition
+                     aspect.cacheTime="0.0"
+                     aspect.dataChangeType="VALUE"
+                     aspect.defaultValue="false"
+                     aspect.isPersistent="true"
+                     baseType="BOOLEAN"
+                     category=""
+                     description=""
+                     isLocalOnly="false"
+                     name="enableWeatherCheck"
+                     ordinal="8"></PropertyDefinition>
+                    <PropertyDefinition
+                     aspect.cacheTime="0.0"
+                     aspect.dataChangeType="VALUE"
+                     aspect.dataShape="GenericStringList"
+                     aspect.defaultValue="{&quot;rows&quot;:[{&quot;item&quot;:&quot;Berlin&quot;},{&quot;item&quot;:&quot;Paris&quot;},{&quot;item&quot;:&quot;London&quot;},{&quot;item&quot;:&quot;Rome&quot;},{&quot;item&quot;:&quot;Madrid&quot;}],&quot;dataShape&quot;:{&quot;fieldDefinitions&quot;:{&quot;item&quot;:{&quot;name&quot;:&quot;item&quot;,&quot;aspects&quot;:{&quot;isPrimaryKey&quot;:true},&quot;description&quot;:&quot;Item&quot;,&quot;baseType&quot;:&quot;STRING&quot;,&quot;ordinal&quot;:0}}}}"
+                     aspect.isPersistent="true"
+                     baseType="INFOTABLE"
+                     category=""
+                     description=""
+                     isLocalOnly="false"
+                     name="locations"
+                     ordinal="5"></PropertyDefinition>
+                    <PropertyDefinition
+                     aspect.cacheTime="0.0"
+                     aspect.dataChangeType="VALUE"
+                     aspect.dataShape="GenericStringList"
+                     aspect.defaultValue="{&quot;rows&quot;:[{&quot;item&quot;:&quot;Small&quot;},{&quot;item&quot;:&quot;Medium&quot;},{&quot;item&quot;:&quot;Large&quot;}],&quot;dataShape&quot;:{&quot;fieldDefinitions&quot;:{&quot;item&quot;:{&quot;name&quot;:&quot;item&quot;,&quot;aspects&quot;:{&quot;isPrimaryKey&quot;:true},&quot;description&quot;:&quot;Item&quot;,&quot;baseType&quot;:&quot;STRING&quot;,&quot;ordinal&quot;:0}}}}"
+                     aspect.isPersistent="true"
+                     baseType="INFOTABLE"
+                     category=""
+                     description=""
+                     isLocalOnly="false"
+                     name="sizes"
+                     ordinal="5"></PropertyDefinition>
+                    <PropertyDefinition
+                     aspect.cacheTime="0.0"
+                     aspect.dataChangeType="VALUE"
+                     aspect.isPersistent="true"
+                     baseType="NUMBER"
+                     category=""
+                     description=""
+                     isLocalOnly="false"
+                     name="TemperatureDifference"
+                     ordinal="9"></PropertyDefinition>
+                    <PropertyDefinition
+                     aspect.cacheTime="0.0"
+                     aspect.dataChangeType="VALUE"
+                     aspect.defaultValue="localhost"
+                     aspect.isPersistent="true"
+                     baseType="STRING"
+                     category=""
+                     description=""
+                     isLocalOnly="false"
+                     name="thingworxIPAdress"
+                     ordinal="6"></PropertyDefinition>
+                    <PropertyDefinition
+                     aspect.cacheTime="0.0"
+                     aspect.dataChangeType="VALUE"
+                     aspect.defaultValue="80.0"
+                     aspect.isPersistent="true"
+                     baseType="NUMBER"
+                     category=""
+                     description=""
+                     isLocalOnly="false"
+                     name="thingworxPort"
+                     ordinal="7"></PropertyDefinition>
+                    <PropertyDefinition
+                     aspect.cacheTime="0.0"
+                     aspect.dataChangeType="VALUE"
+                     aspect.dataShape="GenericStringList"
+                     aspect.defaultValue="{&quot;rows&quot;:[{&quot;item&quot;:&quot;Fruit&quot;},{&quot;item&quot;:&quot;Vegetable&quot;},{&quot;item&quot;:&quot;Meat&quot;}],&quot;dataShape&quot;:{&quot;fieldDefinitions&quot;:{&quot;item&quot;:{&quot;name&quot;:&quot;item&quot;,&quot;aspects&quot;:{&quot;isPrimaryKey&quot;:true},&quot;description&quot;:&quot;Item&quot;,&quot;baseType&quot;:&quot;STRING&quot;,&quot;ordinal&quot;:0}}}}"
+                     aspect.isPersistent="true"
+                     baseType="INFOTABLE"
+                     category=""
+                     description=""
+                     isLocalOnly="false"
+                     name="types"
+                     ordinal="7"></PropertyDefinition>
+                </PropertyDefinitions>
+                <ServiceDefinitions>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="ContainersListFromLocation">
+                        <ResultType
+                         aspect.dataShape="ContainerDefinitions"
+                         baseType="INFOTABLE"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions>
+                            <FieldDefinition
+                             baseType="STRING"
+                             description=""
+                             name="location"
+                             ordinal="1"></FieldDefinition>
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="CreateContainer">
+                        <ResultType
+                         baseType="STRING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions>
+                            <FieldDefinition
+                             baseType="STRING"
+                             description=""
+                             name="containerClient"
+                             ordinal="5"></FieldDefinition>
+                            <FieldDefinition
+                             baseType="STRING"
+                             description=""
+                             name="containerGPS"
+                             ordinal="4"></FieldDefinition>
+                            <FieldDefinition
+                             baseType="STRING"
+                             description=""
+                             name="containerLocation"
+                             ordinal="7"></FieldDefinition>
+                            <FieldDefinition
+                             baseType="STRING"
+                             description=""
+                             name="containerName"
+                             ordinal="1"></FieldDefinition>
+                            <FieldDefinition
+                             baseType="STRING"
+                             description=""
+                             name="containerSize"
+                             ordinal="6"></FieldDefinition>
+                            <FieldDefinition
+                             baseType="STRING"
+                             description=""
+                             name="containerTemplate"
+                             ordinal="2"></FieldDefinition>
+                            <FieldDefinition
+                             baseType="STRING"
+                             description=""
+                             name="containerType"
+                             ordinal="3"></FieldDefinition>
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="CreateContainers">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="CreateWeatherThings">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="DeleteAllContainers">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="DeleteAllWeatherThings">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="GenerateKepwareInitialConfiguration">
+                        <ResultType
+                         baseType="JSON"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="GenerateKepwareProject">
+                        <ResultType
+                         baseType="JSON"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="GetContainersFromLocation">
+                        <ResultType
+                         aspect.dataShape="ContainerProperties_DS"
+                         baseType="INFOTABLE"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions>
+                            <FieldDefinition
+                             baseType="STRING"
+                             description=""
+                             name="location"
+                             ordinal="1"></FieldDefinition>
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="GetContainersInfos">
+                        <ResultType
+                         aspect.dataShape="ContainerDefinitions"
+                         baseType="INFOTABLE"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="GetGPSForLocation">
+                        <ResultType
+                         baseType="LOCATION"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions>
+                            <FieldDefinition
+                             baseType="STRING"
+                             description=""
+                             name="location"
+                             ordinal="1"></FieldDefinition>
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="TemperatureValues">
+                        <ResultType
+                         baseType="NUMBER"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                </ServiceDefinitions>
+                <EventDefinitions></EventDefinitions>
+                <ServiceMappings></ServiceMappings>
+                <ServiceImplementations>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="ContainersListFromLocation">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var locations = me.locations
+                                        
+                                        var found = false;
+                                        var locationsList = ""
+                                        for (var i = 0 ; i < locations.rows.length ; i++){
+                                        	if (location == locations.rows[i].item){
+                                            	found = true;
+                                                break;
+                                            }
+                                            else {
+                                            	locationsList = locationsList + " " + locations.rows[i].item
+                                            }
+                                        }
+                                        if (!found){
+                                        	throw "This location is not acceptable, it should be in " + locationsList
+                                        }
+                                        
+                                        // result: INFOTABLE dataShape: "ContainerDefinitions"
+                                        var result =  ThingTemplates["BasicProperties_TT"].GetImplementingThingsWithData();
+                                        
+                                        for (var i = result.rows.length -1 ; i >= 0 ; i--){
+                                        	if (result.rows[i].Location != location){
+                                            	result.RemoveRow(i)
+                                            }
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="CreateContainer">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                        <FieldDefinition
+                                         baseType="JSON"
+                                         description=""
+                                         name="editorSettings"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var params = {
+                                             name: containerName,
+                                             description: "Created From Script",
+                                             thingTemplateName: containerTemplate,
+                                             tags: undefined
+                                         };
+                                        
+                                        
+                                        //Create Thing and enable it
+                                        try {
+                                            var a = new Date();
+                                            logger.info(me.name + ":CreateContainer " + "Create new container : " + containerName+ " with template " + containerTemplate);
+                                            Resources["EntityServices"].CreateThing(params);
+                                            var containerThing = Things[containerName];
+                                            containerThing.EnableThing();
+                                            containerThing.RestartThing();
+                                            containerThing.Client = containerClient;
+                                            containerThing.GPS = containerGPS;
+                                            containerThing.Type = containerType;
+                                            containerThing.Location = containerLocation;
+                                            containerThing.Size = containerSize;
+                                            
+                                             containerThing.AddTags({
+                                                tags: "FoodColdStorage:" + containerClient /* TAGS */
+                                            });
+                                        }
+                                        catch (ex){
+                                            logger.error("Failed to create Thing " + containerName+ " with template " + containerTemplate);
+                                            try {
+                                            	var containerThing = Things[containerName];
+                                                if (containerThing != undefined) {
+                                                    Resources["EntityServices"].DeleteThing({name: containerThing /* THINGNAME */});
+                                                }
+                                            }
+                                            catch (e){
+                                                //Catch exception (ghost entities)
+                                            }
+                                        }
+                                         var containerThing = Things[containerName];
+                                        //Add Value Stream
+                                         containerThing.SetValueStream({
+                                        	name: "ContainerValueStream" /* THINGNAME */
+                                        });
+                                        
+                                        
+                                        //Add Kepware info
+                                        Resources["EntityServices"].AddShapeToThing({
+                                        	name: containerName /* THINGNAME */,
+                                        	thingShapeName: "IndustrialThingShape" /* THINGSHAPENAME */
+                                        });
+                                        containerThing = Things[containerName] //Need to force a refresh to ahve access to the shape
+                                        containerThing.IndustrialThing = "KepwareConnector";
+                                        
+                                        
+                                        //Bind Properties
+                                        setPropBindings(containerThing, "Humidity", containerName +".Container." + "Humidity");
+                                        setPropBindings(containerThing, "Temperature", containerName +".Container." + "Temperature");
+                                        if (containerTemplate == "VegetableUnit_TT"){
+                                            setPropBindings(containerThing, "Carrot", containerName +".Container." + "Quantity1");
+                                            setPropBindings(containerThing, "Onion", containerName +".Container." + "Quantity2");
+                                            setPropBindings(containerThing, "Potato", containerName +".Container." + "Quantity3");
+                                            setPropBindings(containerThing, "Salad", containerName +".Container." + "Quantity4");
+                                            setPropBindings(containerThing, "Tomato", containerName +".Container." + "Quantity5");
+                                        }
+                                        else if (containerTemplate == "MeatUnit_TT"){
+                                            setPropBindings(containerThing, "Beef", containerName +".Container." + "Quantity1");
+                                            setPropBindings(containerThing, "Chicken", containerName +".Container." + "Quantity2");
+                                            setPropBindings(containerThing, "Fish", containerName +".Container." + "Quantity3");
+                                            setPropBindings(containerThing, "Lamb", containerName +".Container." + "Quantity4");
+                                            setPropBindings(containerThing, "Pig", containerName +".Container." + "Quantity5");
+                                        }
+                                        else if (containerTemplate == "FruitUnit_TT"){
+                                            setPropBindings(containerThing, "Apple", containerName +".Container." + "Quantity1");
+                                            setPropBindings(containerThing, "Banana", containerName +".Container." + "Quantity2");
+                                            setPropBindings(containerThing, "Orange", containerName +".Container." + "Quantity3");
+                                            setPropBindings(containerThing, "Peach", containerName +".Container." + "Quantity4");
+                                            setPropBindings(containerThing, "Pear", containerName +".Container." + "Quantity5");
+                                        }
+                                        var b = new Date();
+                                        var totalTime = b.getTime() - a.getTime();
+                                        var result = me.name + ":CreateContainer " + "SUCCESS to Create new container : " + containerName+ " with template " + containerTemplate + " in " + totalTime + "ms"
+                                        logger.info(result);
+                                        
+                                        
+                                        function setPropBindings(containterThing, propertyName, tagAddress) {
+                                            var aspects = {
+                                                    "industrialDataType": "Long",
+                                                    "tagAddress": tagAddress,
+                                                    "scanRate": 1000,
+                                                    "tagType": "Static",
+                                                    "startType": "readEdgeValue",
+                                                    "dataShape": ""
+                                                } 
+                                            containerThing.SetRemotePropertyBinding({
+                                                propertyName: propertyName /* STRING */,
+                                                aspects: aspects /* JSON */,
+                                                pushThreshold: undefined /* NUMBER */,
+                                                foldType: undefined /* STRING */,
+                                                sourcePropertyName: undefined /* STRING */,
+                                                timeout: 0 /* INTEGER */,
+                                                cacheTime: undefined /* INTEGER */,
+                                                pushType: "VALUE" /* STRING */
+                                            });
+                                        }
+                                        ]]>
+                                        </code>
+                                        <editorSettings>
+                                            <json>
+                                            <![CDATA[
+                                            {"viewState":{"viewState":{"firstPositionDeltaTop":-8,"scrollLeft":0,"firstPosition":{"column":1,"lineNumber":88}},"cursorState":[{"inSelectionMode":false,"selectionStart":{"column":1,"lineNumber":107},"position":{"column":1,"lineNumber":107}}],"contributionsState":{"editor.contrib.wordHighlighter":false,"editor.contrib.folding":{"provider":"indent","lineCount":107}}}}
+                                            ]]>
+                                            </json>
+                                        </editorSettings>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="CreateContainers">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        // result: INFOTABLE dataShape: "GenericStringList"
+                                        var containers =  me.GetContainersInfos();
+                                        
+                                        for (var i = 0 ; i < containers.rows.length ; i++ ) {
+                                            var container = containers.rows[i]
+                                            if (Things[container.name] != undefined){
+                                                //Thing already exist, skip it
+                                                continue;
+                                            }
+                                             me.CreateContainer({
+                                                containerName: container.name /* STRING */,
+                                                containerTemplate: container.template /* STRING */,
+                                                containerSize: container.size /* STRING */,
+                                                containerClient: container.client /* STRING */,
+                                                containerLocation: container.location /* STRING */,
+                                                containerGPS: container.GPS /* STRING */,
+                                                containerType: container.type /* STRING */
+                                            });
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="CreateWeatherThings">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        for (b in me.locations.rows) {
+                                        	try {
+                                                var location = me.locations.rows[b].item
+                                                var thingName = "Weather"+location
+                                                if (Things[thingName] != undefined){
+                                                	continue;
+                                                }
+                                                logger.info(me.name + ":CreateWeatherThings " + "Create new weather thing : " + thingName+ " for location " + location);
+                                               	 var params = {
+                                                     name: thingName,
+                                                     description: "Created From Script",
+                                                     thingTemplateName: "WeatherForcast_TT",
+                                                     tags: undefined
+                                                 };
+                                                Resources["EntityServices"].CreateThing(params);
+                                                var weatherThing = Things[thingName];
+                                                weatherThing.EnableThing();
+                                                weatherThing.RestartThing();
+                                                //Set Properties
+                                                var weatherThing = Things[thingName];
+                                                weatherThing.GPS = me.GetGPSForLocation({location:location});
+                                                weatherThing.Location = location
+                                                
+                                                //Add Value Stream
+                                                 weatherThing.SetValueStream({
+                                                    name: "WeatherValueStream" /* THINGNAME */
+                                                });
+                                            }
+                                            catch (ex){
+                                                logger.error("Failed to create new weather thing : " + thingName+ " for location " + location);
+                                            }
+                                        	
+                                            
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="DeleteAllContainers">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        // result: INFOTABLE dataShape: "GenericStringList"
+                                        var containers =  me.GetContainersInfos();
+                                        
+                                        for (var i = 0 ; i < containers.rows.length ; i++ ) {
+                                        	var container = containers.rows[i]
+                                            if (Things[container.name] != undefined){
+                                                logger.info(me.name + ":DeleteAllContainers " + " Delete container " +  container.name);
+                                                var params = {
+                                                    name: container.name /* THINGNAME */
+                                                };
+                                                // no return
+                                                Resources["EntityServices"].DeleteThing(params);
+                                            }   
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="DeleteAllWeatherThings">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        for (b in me.locations.rows) {
+                                            var location = me.locations.rows[b].item
+                                            var thingName = "Weather"+location
+                                            if (Things[thingName] != undefined){
+                                                logger.info(me.name + ":DeleteAllWeatherThings " + " Delete weather thing " +  thingName);
+                                                var params = {
+                                                    name: thingName /* THINGNAME */
+                                                };
+                                                // no return
+                                                Resources["EntityServices"].DeleteThing(params);
+                                            }   
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="GenerateKepwareInitialConfiguration">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var result = new Object();
+                                        
+                                        result = {
+                                        	"project": {
+                                        		"common.ALLTYPES_DESCRIPTION": "Example project utilizing Simulator Driver.",
+                                        		"servermain.PROJECT_TITLE": "Simulation Driver Demo",
+                                        		"servermain.PROJECT_ENCRYPTION_ENABLE": true,
+                                        		"servermain.PROJECT_ENCRYPTION_PASSWORD": "",
+                                        		"channels": [],
+                                        		"client_interfaces": [
+                                        			{
+                                        				"common.ALLTYPES_NAME": "xiserverinterface",
+                                        				"xiserverinterface.ENABLE": false
+                                        			},
+                                        			{
+                                        				"common.ALLTYPES_NAME": "aeserverinterface",
+                                        				"aeserverinterface.ENABLE_AE_SERVER": false,
+                                        				"aeserverinterface.ENABLE_SIMPLE_EVENTS": true,
+                                        				"aeserverinterface.MAX_SUBSCRIPTION_BUFFER_SIZE": 100,
+                                        				"aeserverinterface.MIN_SUBSCRIPTION_BUFFER_TIME_MS": 1000,
+                                        				"aeserverinterface.MIN_KEEP_ALIVE_TIME_MS": 1000
+                                        			},
+                                        			{
+                                        				"common.ALLTYPES_NAME": "ddeserver",
+                                        				"ddeserver.ENABLE": true,
+                                        				"ddeserver.SERVICE_NAME": "kepdde",
+                                        				"ddeserver.ADVANCED_DDE": true,
+                                        				"ddeserver.XLTABLE": true,
+                                        				"ddeserver.CF_TEXT": true,
+                                        				"ddeserver.CLIENT_UPDATE_INTERVAL_MS": 100,
+                                        				"ddeserver.REQUEST_TIMEOUT_SEC": 15
+                                        			},
+                                        			{
+                                        				"common.ALLTYPES_NAME": "hdaserver",
+                                        				"hdaserver.ENABLE": false,
+                                        				"hdaserver.ENABLE_DIAGNOSTICS": false
+                                        			},
+                                        			{
+                                        				"common.ALLTYPES_NAME": "opcdaserver",
+                                        				"opcdaserver.PROJECT_OPC_DA_1_ENABLED": true,
+                                        				"opcdaserver.PROJECT_OPC_DA_2_ENABLED": true,
+                                        				"opcdaserver.PROJECT_OPC_DA_3_ENABLED": true,
+                                        				"opcdaserver.PROJECT_OPC_SHOW_HINTS_ON_BROWSE": false,
+                                        				"opcdaserver.PROJECT_OPC_SHOW_TAG_PROPERTIES_ON_BROWSE": false,
+                                        				"opcdaserver.PROJECT_OPC_SHUTDOWN_WAIT_SEC": 15,
+                                        				"opcdaserver.PROJECT_OPC_SYNC_REQUEST_WAIT_SEC": 15,
+                                        				"opcdaserver.PROJECT_OPC_ENABLE_DIAGS": false,
+                                        				"opcdaserver.PROJECT_OPC_REJECT_UNSUPPORTED_LANG_ID": true,
+                                        				"opcdaserver.PROJECT_OPC_IGNORE_DEADBAND_ON_CACHE": false,
+                                        				"opcdaserver.PROJECT_OPC_IGNORE_BROWSE_FILTER": false,
+                                        				"opcdaserver.PROJECT_OPC_205A_DATA_TYPE_SUPPORT": true,
+                                        				"opcdaserver.PROJECT_OPC_SYNC_READ_ERROR_ON_BAD_QUALITY": false,
+                                        				"opcdaserver.PROJECT_OPC_RETURN_INITIAL_UPDATES_IN_SINGLE_CALLBACK": false,
+                                        				"opcdaserver.PROJECT_OPC_RESPECT_CLIENT_LANG_ID": true,
+                                        				"opcdaserver.PROJECT_OPC_COMPLIANT_DATA_CHANGE": true,
+                                        				"opcdaserver.PROJECT_OPC_IGNORE_GROUP_UPDATE_RATE": false
+                                        			},
+                                        			{
+                                        				"common.ALLTYPES_NAME": "thingworxinterface",
+                                        				"thingworxinterface.ENABLED": true,
+                                        				"thingworxinterface.LEGACY": false,
+                                        				"thingworxinterface.HOSTNAME": me.thingworxIPAdress,
+                                        				"thingworxinterface.PORT": me.thingworxPort,
+                                        				"thingworxinterface.RESOURCE": "/Thingworx/WS",
+                                        				"thingworxinterface.APPKEY": "aabcf26bab1ea8be7b98688efb96c289493e384bf0d7f9b074d373f829054429676eec65ab674bf206525f59f2ffed522a8247f9193e2ce004b5abe9c64e47cf",
+                                        				"thingworxinterface.ALLOW_SELF_SIGNED_CERTIFICATE": true,
+                                        				"thingworxinterface.TRUST_ALL_CERTIFICATES": true,
+                                        				"thingworxinterface.DISABLE_ENCRYPTION": true,
+                                        				"thingworxinterface.THING_NAME": "KepwareConnector",
+                                        				"thingworxinterface.SERVER_DESCRIPTION": "",
+                                        				"thingworxinterface.SCAN_RATE_MSEC": 1000,
+                                        				"thingworxinterface.SEND_EVERY_SCAN": false,
+                                        				"thingworxinterface.PUBLISH_FLOOR_MSEC": 1000,
+                                        				"thingworxinterface.LOGGING_ENABLED": false,
+                                        				"thingworxinterface.LOG_LEVEL": 3,
+                                        				"thingworxinterface.VERBOSE": false,
+                                        				"thingworxinterface.STORE_AND_FORWARD_ENABLED": false,
+                                        				"thingworxinterface.STORAGE_PATH": "C:\\ProgramData\\Kepware\\KEPServerEX\\V6",
+                                        				"thingworxinterface.DATASTORE_MAXSIZE": 2048,
+                                        				"thingworxinterface.FORWARD_MODE": 0,
+                                        				"thingworxinterface.DATASTORE_ID": 980111677
+                                        			},
+                                        			{
+                                        				"common.ALLTYPES_NAME": "uaserverinterface",
+                                        				"uaserverinterface.PROJECT_OPC_UA_ENABLE": true,
+                                        				"uaserverinterface.PROJECT_OPC_UA_DIAGNOSTICS": false,
+                                        				"uaserverinterface.PROJECT_OPC_UA_ANONYMOUS_LOGIN": false,
+                                        				"uaserverinterface.PROJECT_OPC_UA_MAX_CONNECTIONS": 128,
+                                        				"uaserverinterface.PROJECT_OPC_UA_MIN_SESSION_TIMEOUT_SEC": 15,
+                                        				"uaserverinterface.PROJECT_OPC_UA_MAX_SESSION_TIMEOUT_SEC": 60,
+                                        				"uaserverinterface.PROJECT_OPC_UA_TAG_CACHE_TIMEOUT_SEC": 5,
+                                        				"uaserverinterface.PROJECT_OPC_UA_BROWSE_TAG_PROPERTIES": true,
+                                        				"uaserverinterface.PROJECT_OPC_UA_BROWSE_ADDRESS_HINTS": true,
+                                        				"uaserverinterface.PROJECT_OPC_UA_MAX_DATA_QUEUE_SIZE": 2,
+                                        				"uaserverinterface.PROJECT_OPC_UA_MAX_RETRANSMIT_QUEUE_SIZE": 10,
+                                        				"uaserverinterface.PROJECT_OPC_UA_MAX_NOTIFICATION_PER_PUBLISH": 65536
+                                        			}
+                                        		]
+                                        	}
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="GenerateKepwareProject">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        // result: JSON
+                                        var result =  me.GenerateKepwareInitialConfiguration();
+                                        
+                                        // result: INFOTABLE dataShape: "GenericStringList"
+                                        var containers =  me.GetContainersInfos();
+                                        for (var i = 0 ; i < containers.rows.length ; i++ ) {
+                                            var container = containers.rows[i]
+                                            var channelJson = getChannelJson(container.name)
+                                            
+                                            result.project.channels.push(channelJson);
+                                            
+                                        }
+                                        
+                                        // Function to generate random integer  
+                                        function randomInteger(min, max) {  
+                                            return Math.floor(Math.random() * (max - min) + min); 
+                                        }  
+                                        
+                                        function getChannelJson(channelName){
+                                        	var channelJson = {
+                                        				"common.ALLTYPES_NAME": channelName,
+                                        				"servermain.MULTIPLE_TYPES_DEVICE_DRIVER": "Simulator",
+                                        				"servermain.CHANNEL_DIAGNOSTICS_CAPTURE": false,
+                                        				"servermain.CHANNEL_UNIQUE_ID": 2223254647,
+                                        				"servermain.CHANNEL_WRITE_OPTIMIZATIONS_METHOD": 2,
+                                        				"servermain.CHANNEL_WRITE_OPTIMIZATIONS_DUTY_CYCLE": 10,
+                                        				"servermain.CHANNEL_NON_NORMALIZED_FLOATING_POINT_HANDLING": 0,
+                                        				"simulator.CHANNEL_ITEM_PERSISTENCE": false,
+                                        				"simulator.CHANNEL_ITEM_PERSISTENCE_DATA_FILE": "C:\\ProgramData\\Kepware\\KEPServerEX\\V6\\Simulator\\SimulatedChannel.dat",
+                                        				"devices": [
+                                        					{
+                                        						"common.ALLTYPES_NAME": "Container",
+                                        						"servermain.MULTIPLE_TYPES_DEVICE_DRIVER": "Simulator",
+                                        						"servermain.DEVICE_MODEL": 0,
+                                        						"servermain.DEVICE_UNIQUE_ID": 1456423399,
+                                        						"servermain.DEVICE_ID_FORMAT": 1,
+                                        						"servermain.DEVICE_ID_STRING": "1",
+                                        						"servermain.DEVICE_ID_HEXADECIMAL": 1,
+                                        						"servermain.DEVICE_ID_DECIMAL": 1,
+                                        						"servermain.DEVICE_ID_OCTAL": 1,
+                                        						"servermain.DEVICE_DATA_COLLECTION": true,
+                                        						"servermain.DEVICE_SCAN_MODE": 0,
+                                        						"servermain.DEVICE_SCAN_MODE_RATE_MS": 1000,
+                                        						"servermain.DEVICE_SCAN_MODE_PROVIDE_INITIAL_UPDATES_FROM_CACHE": false,
+                                        						"tags": [
+                                        							{
+                                        								"common.ALLTYPES_NAME": "Humidity",
+                                        								"servermain.TAG_ADDRESS": "RANDOM (" + randomInteger(5000,20000) + ", 40, 60)",
+                                        								"servermain.TAG_DATA_TYPE": 6,
+                                        								"servermain.TAG_READ_WRITE_ACCESS": 0,
+                                        								"servermain.TAG_SCAN_RATE_MILLISECONDS": 100,
+                                        								"servermain.TAG_SCALING_TYPE": 0
+                                        							},
+                                        							{
+                                        								"common.ALLTYPES_NAME": "Quantity1",
+                                        								"servermain.TAG_ADDRESS": "RAMP (" + randomInteger(5000,20000) + ", 0, 15, -1)",
+                                        								"servermain.TAG_DATA_TYPE": 6,
+                                        								"servermain.TAG_READ_WRITE_ACCESS": 0,
+                                        								"servermain.TAG_SCAN_RATE_MILLISECONDS": 100,
+                                        								"servermain.TAG_SCALING_TYPE": 0
+                                        							},
+                                        							{
+                                        								"common.ALLTYPES_NAME": "Quantity2",
+                                        								"servermain.TAG_ADDRESS": "RAMP (" + randomInteger(5000,20000) + ", 0, 15, -1)",
+                                        								"servermain.TAG_DATA_TYPE": 6,
+                                        								"servermain.TAG_READ_WRITE_ACCESS": 0,
+                                        								"servermain.TAG_SCAN_RATE_MILLISECONDS": 100,
+                                        								"servermain.TAG_SCALING_TYPE": 0
+                                        							},
+                                        							{
+                                        								"common.ALLTYPES_NAME": "Quantity3",
+                                        								"servermain.TAG_ADDRESS": "RAMP (" + randomInteger(5000,20000) + ", 0, 15, -1)",
+                                        								"servermain.TAG_DATA_TYPE": 6,
+                                        								"servermain.TAG_READ_WRITE_ACCESS": 0,
+                                        								"servermain.TAG_SCAN_RATE_MILLISECONDS": 100,
+                                        								"servermain.TAG_SCALING_TYPE": 0
+                                        							},
+                                        							{
+                                        								"common.ALLTYPES_NAME": "Quantity4",
+                                        								"servermain.TAG_ADDRESS": "RAMP (" + randomInteger(5000,20000) + ", 0, 15, -1)",
+                                        								"servermain.TAG_DATA_TYPE": 6,
+                                        								"servermain.TAG_READ_WRITE_ACCESS": 0,
+                                        								"servermain.TAG_SCAN_RATE_MILLISECONDS": 100,
+                                        								"servermain.TAG_SCALING_TYPE": 0
+                                        							},
+                                        							{
+                                        								"common.ALLTYPES_NAME": "Quantity5",
+                                        								"servermain.TAG_ADDRESS": "RAMP (" + randomInteger(5000,20000) + ", 0, 15, -1)",
+                                        								"servermain.TAG_DATA_TYPE": 6,
+                                        								"servermain.TAG_READ_WRITE_ACCESS": 0,
+                                        								"servermain.TAG_SCAN_RATE_MILLISECONDS": 100,
+                                        								"servermain.TAG_SCALING_TYPE": 0
+                                        							},
+                                        							{
+                                        								"common.ALLTYPES_NAME": "Temperature",
+                                        								"servermain.TAG_ADDRESS": "RANDOM (" + randomInteger(5000,20000) + ", 2, 8)",
+                                        								"servermain.TAG_DATA_TYPE": 6,
+                                        								"servermain.TAG_READ_WRITE_ACCESS": 0,
+                                        								"servermain.TAG_SCAN_RATE_MILLISECONDS": 100,
+                                        								"servermain.TAG_SCALING_TYPE": 0
+                                        							}
+                                        						]
+                                        					}
+                                        				]
+                                        			}
+                                            return channelJson
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="GetContainersFromLocation">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var locations = me.locations
+                                        
+                                        var found = false;
+                                        var locationsList = ""
+                                        for (var i = 0 ; i < locations.rows.length ; i++){
+                                        	if (location == locations.rows[i].item){
+                                            	found = true;
+                                                break;
+                                            }
+                                            else {
+                                            	locationsList = locationsList + " " + locations.rows[i].item
+                                            }
+                                        }
+                                        if (!found){
+                                        	throw "This location is not acceptable, it should be in " + locationsList
+                                        }
+                                        
+                                        // result: INFOTABLE dataShape: "RootEntityList"
+                                        var result =  ThingTemplates["BasicProperties_TT"].GetImplementingThingsWithData();
+                                        
+                                        for (var i = result.rows.length -1 ; i >= 0 ; i--){
+                                        	if (result.rows[i].Location != location){
+                                            	result.RemoveRow(i)
+                                            }
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="GetContainersInfos">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var params = {
+                                            infoTableName : "InfoTable",
+                                            dataShapeName : "ContainerDefinitions"
+                                        };
+                                        
+                                        // CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(GenericStringList)
+                                        var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+                                        
+                                        for (a in me.clients.rows){
+                                        	    for (b in me.locations.rows) {
+                                                    for (c in me.types.rows) { 
+                                                    	for (d in me.sizes.rows) {
+                                                            // GenericStringList entry object
+                                                            var newEntry = new Object();
+                                                            newEntry.name = me.clients.rows[a].item + me.locations.rows[b].item + me.types.rows[c].item + me.sizes.rows[d].item; // STRING [Primary Key]
+                                                            newEntry.client = me.clients.rows[a].item
+                                                            newEntry.location = me.locations.rows[b].item
+                                                            newEntry.type = me.types.rows[c].item
+                                                            newEntry.size = me.sizes.rows[d].item
+                                                            newEntry.template = me.types.rows[c].item + "Unit_TT"
+                                                            newEntry.GPS = me.GetGPSForLocation({location:me.locations.rows[b].item})
+                                                            result.AddRow(newEntry)
+                                                        }
+                                                    }
+                                                }
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="GetGPSForLocation">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var result = "0,0,0";
+                                        
+                                        if (location.toUpperCase() == "PARIS"){
+                                        	result = "48.853,2.35,46"
+                                        }
+                                        else if (location.toUpperCase() == "LONDON"){
+                                        	result = "51.507322,-0.127647,33"
+                                        }
+                                        else if (location.toUpperCase() == "ROME"){
+                                        	result = "41.89332,12.482932,34"
+                                        }
+                                        else if (location.toUpperCase() == "MADRID"){
+                                        	result = "40.4167047,-3.7035825,698"
+                                        }
+                                        else if (location.toUpperCase() == "BERLIN"){
+                                        	result = "52.5170365,13.3888599,40"
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="TemperatureValues">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var outdoorValue = Things["WeatherBerlin"].Temperature;
+                                        var indoorValue = Things["Trigon_Food_BVBerlinFruitLarge"].Temperature;
+                                        result = outdoorValue - indoorValue;
+                                        
+                                        me.TemperatureDifference = result;
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                </ServiceImplementations>
+                <Subscriptions>
+                    <Subscription
+                     description=""
+                     enabled="false"
+                     eventName="Alert"
+                     name="alertMessage"
+                     source=""
+                     sourceProperty="TemperatureDifference"
+                     sourceType="Thing">
+                        <ServiceImplementation
+                         description=""
+                         handlerName="Script"
+                         name="alertMessage">
+                            <ConfigurationTables>
+                                <ConfigurationTable
+                                 description=""
+                                 isMultiRow="false"
+                                 name="Script"
+                                 ordinal="0">
+                                    <DataShape>
+                                        <FieldDefinitions>
+                                            <FieldDefinition
+                                             baseType="STRING"
+                                             description="code"
+                                             name="code"
+                                             ordinal="0"></FieldDefinition>
+                                        </FieldDefinitions>
+                                    </DataShape>
+                                    <Rows>
+                                        <Row>
+                                            <code>
+                                            <![CDATA[
+                                            Things["PracticalExamMailThing"].SendMessage({
+                                            	cc: undefined /* STRING */,
+                                            	bcc: undefined /* STRING */,
+                                            	subject: "Practical Exam Test Email from TWX" /* STRING */,
+                                            	from: "gigelbones@gmail.com" /* STRING */,
+                                            	to: "adpetrescu@ptc.com" /* STRING */,
+                                            	body: "Test message sent from TWX in the ptc portal VM. The current difference between the outdoor and indoor values is of " + me.TemperatureDifference + " degrees, which is higher than the allowed limit of 8 degrees. Check the system and make the appropiate changes." /* HTML */
+                                            });
+                                            ]]>
+                                            </code>
+                                        </Row>
+                                    </Rows>
+                                </ConfigurationTable>
+                            </ConfigurationTables>
+                        </ServiceImplementation>
+                    </Subscription>
+                    <Subscription
+                     description=""
+                     enabled="true"
+                     eventName="DataChange"
+                     name="checkIndoorValue"
+                     source="Trigon_Food_BVBerlinFruitLarge"
+                     sourceProperty="Temperature"
+                     sourceType="Thing">
+                        <ServiceImplementation
+                         description=""
+                         handlerName="Script"
+                         name="checkIndoorValue">
+                            <ConfigurationTables>
+                                <ConfigurationTable
+                                 description=""
+                                 isMultiRow="false"
+                                 name="Script"
+                                 ordinal="0">
+                                    <DataShape>
+                                        <FieldDefinitions>
+                                            <FieldDefinition
+                                             baseType="STRING"
+                                             description="code"
+                                             name="code"
+                                             ordinal="0"></FieldDefinition>
+                                        </FieldDefinitions>
+                                    </DataShape>
+                                    <Rows>
+                                        <Row>
+                                            <code>
+                                            <![CDATA[
+                                            me.TemperatureValues();
+                                            ]]>
+                                            </code>
+                                        </Row>
+                                    </Rows>
+                                </ConfigurationTable>
+                            </ConfigurationTables>
+                        </ServiceImplementation>
+                    </Subscription>
+                    <Subscription
+                     description=""
+                     enabled="true"
+                     eventName="DataChange"
+                     name="checkOutdoorValue"
+                     source="WeatherBerlin"
+                     sourceProperty="Temperature"
+                     sourceType="Thing">
+                        <ServiceImplementation
+                         description=""
+                         handlerName="Script"
+                         name="checkOutdoorValue">
+                            <ConfigurationTables>
+                                <ConfigurationTable
+                                 description=""
+                                 isMultiRow="false"
+                                 name="Script"
+                                 ordinal="0">
+                                    <DataShape>
+                                        <FieldDefinitions>
+                                            <FieldDefinition
+                                             baseType="STRING"
+                                             description="code"
+                                             name="code"
+                                             ordinal="0"></FieldDefinition>
+                                        </FieldDefinitions>
+                                    </DataShape>
+                                    <Rows>
+                                        <Row>
+                                            <code>
+                                            <![CDATA[
+                                            me.TemperatureValues();
+                                            ]]>
+                                            </code>
+                                        </Row>
+                                    </Rows>
+                                </ConfigurationTable>
+                            </ConfigurationTables>
+                        </ServiceImplementation>
+                    </Subscription>
+                </Subscriptions>
+            </ThingShape>
+            <PropertyBindings></PropertyBindings>
+            <RemotePropertyBindings></RemotePropertyBindings>
+            <RemoteServiceBindings></RemoteServiceBindings>
+            <RemoteEventBindings></RemoteEventBindings>
+            <AlertConfigurations>
+                <AlertDefinitions
+                 name="clients"></AlertDefinitions>
+                <AlertDefinitions
+                 name="enableWeatherCheck"></AlertDefinitions>
+                <AlertDefinitions
+                 name="locations"></AlertDefinitions>
+                <AlertDefinitions
+                 name="sizes"></AlertDefinitions>
+                <AlertDefinitions
+                 name="TemperatureDifference">
+                    <AlertDefinition
+                     alertType="Above"
+                     description=""
+                     enabled="true"
+                     name="TemperatureDifferenceAlert"
+                     priority="1"
+                     propertyBaseType="NUMBER">
+                        <AlertAttributes>
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     aspect.friendlyName="Limit"
+                                     aspect.isRequired="true"
+                                     baseType="NUMBER"
+                                     description="Limit to compare"
+                                     name="limit"
+                                     ordinal="0"></FieldDefinition>
+                                    <FieldDefinition
+                                     aspect.defaultValue="true"
+                                     aspect.friendlyName="Include Limit?"
+                                     aspect.isRequired="false"
+                                     baseType="BOOLEAN"
+                                     description="Limit includes value"
+                                     name="limitInclusive"
+                                     ordinal="1"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <limit>9.0</limit>
+                                    <limitInclusive>true</limitInclusive>
+                                </Row>
+                            </Rows>
+                        </AlertAttributes>
+                    </AlertDefinition>
+                </AlertDefinitions>
+                <AlertDefinitions
+                 name="thingworxIPAdress"></AlertDefinitions>
+                <AlertDefinitions
+                 name="thingworxPort"></AlertDefinitions>
+                <AlertDefinitions
+                 name="types"></AlertDefinitions>
+            </AlertConfigurations>
+            <ImplementedShapes></ImplementedShapes>
+            <ThingProperties>
+                <TemperatureDifference>
+                    <Value>18.0</Value>
+                    <Timestamp>2020-05-04T15:29:03.448Z</Timestamp>
+                    <Quality>GOOD</Quality>
+                </TemperatureDifference>
+                <types>
+                    <Value>
+                        <infoTable>
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     aspect.isPrimaryKey="true"
+                                     baseType="STRING"
+                                     description="Item"
+                                     name="item"
+                                     ordinal="1"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    Fruit
+                                    ]]>
+                                    </item>
+                                </Row>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    Vegetable
+                                    ]]>
+                                    </item>
+                                </Row>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    Meat
+                                    ]]>
+                                    </item>
+                                </Row>
+                            </Rows>
+                        </infoTable>
+                    </Value>
+                    <Timestamp>2020-04-06T08:08:12.882Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
+                </types>
+                <clients>
+                    <Value>
+                        <infoTable>
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     aspect.isPrimaryKey="true"
+                                     baseType="STRING"
+                                     description="Item"
+                                     name="item"
+                                     ordinal="1"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    AG_Holland
+                                    ]]>
+                                    </item>
+                                </Row>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    Cargill
+                                    ]]>
+                                    </item>
+                                </Row>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    Cotswold_Fayre
+                                    ]]>
+                                    </item>
+                                </Row>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    Trigon_Food_BV
+                                    ]]>
+                                    </item>
+                                </Row>
+                            </Rows>
+                        </infoTable>
+                    </Value>
+                    <Timestamp>2020-04-06T08:02:52.168Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
+                </clients>
+                <sizes>
+                    <Value>
+                        <infoTable>
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     aspect.isPrimaryKey="true"
+                                     baseType="STRING"
+                                     description="Item"
+                                     name="item"
+                                     ordinal="1"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    Small
+                                    ]]>
+                                    </item>
+                                </Row>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    Medium
+                                    ]]>
+                                    </item>
+                                </Row>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    Large
+                                    ]]>
+                                    </item>
+                                </Row>
+                            </Rows>
+                        </infoTable>
+                    </Value>
+                    <Timestamp>2020-04-06T08:11:20.125Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
+                </sizes>
+                <thingworxIPAdress>
+                    <Value>
+                    <![CDATA[
+                    localhost
+                    ]]>
+                    </Value>
+                    <Timestamp>2020-04-09T12:45:03.144Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
+                </thingworxIPAdress>
+                <locations>
+                    <Value>
+                        <infoTable>
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     aspect.isPrimaryKey="true"
+                                     baseType="STRING"
+                                     description="Item"
+                                     name="item"
+                                     ordinal="1"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    Berlin
+                                    ]]>
+                                    </item>
+                                </Row>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    Paris
+                                    ]]>
+                                    </item>
+                                </Row>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    London
+                                    ]]>
+                                    </item>
+                                </Row>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    Rome
+                                    ]]>
+                                    </item>
+                                </Row>
+                                <Row>
+                                    <item>
+                                    <![CDATA[
+                                    Madrid
+                                    ]]>
+                                    </item>
+                                </Row>
+                            </Rows>
+                        </infoTable>
+                    </Value>
+                    <Timestamp>2020-04-06T08:03:50.231Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
+                </locations>
+                <thingworxPort>
+                    <Value>80.0</Value>
+                    <Timestamp>2020-04-09T12:45:03.145Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
+                </thingworxPort>
+                <enableWeatherCheck>
+                    <Value>false</Value>
+                    <Timestamp>2020-04-10T09:06:08.655Z</Timestamp>
+                    <Quality>UNKNOWN</Quality>
+                </enableWeatherCheck>
+            </ThingProperties>
+        </Thing>
+    </Things>
+</Entities>

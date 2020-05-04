@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ build="b222"
+ majorVersion="8"
+ minorVersion="5"
+ modelPersistenceProviderPackage="PostgresPersistenceProviderPackage"
+ revision="4"
+ schemaVersion="1053"
+ universal="password">
+    <Things>
+        <Thing
+         description=""
+         documentationContent=""
+         effectiveThingPackage="ConfiguredThing"
+         enabled="true"
+         homeMashup=""
+         identifier=""
+         name="PermissionsUtilThing"
+         projectName="FoodColdStorage"
+         published="false"
+         tags=""
+         thingTemplate="GenericThing"
+         valueStream="">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions>
+                <Permissions
+                 resourceName="*">
+                    <PropertyRead></PropertyRead>
+                    <PropertyWrite>
+                        <Principal
+                         isPermitted="true"
+                         name="TFBVOwnerGroup"
+                         type="Group"></Principal>
+                    </PropertyWrite>
+                    <ServiceInvoke></ServiceInvoke>
+                    <EventInvoke></EventInvoke>
+                    <EventSubscribe></EventSubscribe>
+                </Permissions>
+            </RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility></Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+            <ThingShape>
+                <PropertyDefinitions></PropertyDefinitions>
+                <ServiceDefinitions>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="assignClientOwnerPermissions">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions>
+                            <FieldDefinition
+                             aspect.defaultValue="AG_Holland"
+                             baseType="STRING"
+                             description=""
+                             name="client"
+                             ordinal="1"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="AG_HOwnerGroup"
+                             baseType="STRING"
+                             description=""
+                             name="groupName"
+                             ordinal="2"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="AG_HOwnerOrg"
+                             baseType="STRING"
+                             description=""
+                             name="orgName"
+                             ordinal="3"></FieldDefinition>
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="assignFruitUnitsPermissions">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions>
+                            <FieldDefinition
+                             aspect.defaultValue="AG_Holland"
+                             baseType="STRING"
+                             description=""
+                             name="client"
+                             ordinal="1"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="AG_HOwnerGroup"
+                             baseType="STRING"
+                             description=""
+                             name="groupName"
+                             ordinal="2"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="AG_HOwnerOrg"
+                             baseType="STRING"
+                             description=""
+                             name="orgName"
+                             ordinal="3"></FieldDefinition>
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="assignGroupstoOrganizations">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="assignMeatUnitsPermissions">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions>
+                            <FieldDefinition
+                             aspect.defaultValue="AG_Holland"
+                             baseType="STRING"
+                             description=""
+                             name="client"
+                             ordinal="1"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="AG_HMeatGroup"
+                             baseType="STRING"
+                             description=""
+                             name="groupName"
+                             ordinal="2"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="AG_HOwnerOrg"
+                             baseType="STRING"
+                             description=""
+                             name="orgName"
+                             ordinal="3"></FieldDefinition>
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="assignPermissionsForUI">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="assignProjectName">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="assignUserstoGroups">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="assignVegetableUnitsPermissions">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions>
+                            <FieldDefinition
+                             aspect.defaultValue="AG_Holland"
+                             baseType="STRING"
+                             description=""
+                             name="client"
+                             ordinal="1"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="AG_HVegetableGroup"
+                             baseType="STRING"
+                             description=""
+                             name="groupName"
+                             ordinal="2"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="AG_HOwnerOrg"
+                             baseType="STRING"
+                             description=""
+                             name="orgName"
+                             ordinal="3"></FieldDefinition>
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="createGroups">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="createOrganizations">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="createUsers">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                </ServiceDefinitions>
+                <EventDefinitions></EventDefinitions>
+                <ServiceMappings></ServiceMappings>
+                <ServiceImplementations>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="assignClientOwnerPermissions">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var list = ["MadridMeatSmall","MadridMeatMedium","MadridMeatLarge","MadridVegetableSmall","MadridVegetableMedium","MadridVegetableLarge","MadridFruitSmall","MadridFruitMedium","MadridFruitLarge","RomeMeatSmall","RomeMeatMedium","RomeMeatLarge","RomeVegetableSmall","RomeVegetableMedium","RomeVegetableLarge","RomeFruitSmall","RomeFruitLarge","RomeFruitMedium","LondonMeatSmall","LondonMeatMedium","LondonMeatLarge","LondonVegetableSmall","LondonVegetableMedium","LondonVegetableLarge","LondonFruitSmall","LondonFruitMedium","LondonFruitLarge","ParisMeatSmall","ParisMeatMedium","ParisMeatLarge","ParisVegetableSmall","ParisVegetableMedium","ParisVegetableLarge","ParisFruitSmall","ParisFruitMedium","ParisFruitLarge","BerlinMeatSmall","BerlinMeatMedium","BerlinMeatLarge","BerlinVegetableSmall","BerlinVegetableMedium","BerlinVegetableLarge","BerlinFruitSmall","BerlinFruitMedium","BerlinFruitLarge"];
+                                        var typ = ["PropertyWrite","PropertyRead","ServiceInvoke","EventInvoke","EventSubscribe"];
+                                        var typ2 = ["Create","Read","Update","Delete"];
+                                        for (var a in list) {
+                                           	 for (var b in typ) {
+                                           	 Things[client + list[a]].AddRunTimePermission({
+                                                allow: true /* BOOLEAN */,
+                                                principal: groupName /* STRING */,
+                                                resource: "*" /* STRING */,
+                                                type: typ[b] /* STRING */,
+                                                principalType: "Group" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        
+                                        for (var d in list) {
+                                        Things[client+list[d]].AddVisibilityPermission({
+                                        	principal: orgName /* STRING */,
+                                        	principalType: "Organization" /* STRING */
+                                        });
+                                        }
+                                        
+                                        for (var e in list) {
+                                            for (var f in typ2) {
+                                            Things[client+list[e]].AddDesignTimePermission({
+                                                allow: true /* BOOLEAN */,
+                                                principal: groupName /* STRING */,
+                                                type: typ2[f] /* STRING */,
+                                                principalType: "Group" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="assignFruitUnitsPermissions">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var fruit = ["MadridFruitSmall","MadridFruitMedium","MadridFruitLarge","RomeFruitSmall","RomeFruitMedium","RomeFruitLarge","LondonFruitSmall","LondonFruitMedium","LondonFruitLarge","ParisFruitSmall","ParisFruitMedium","ParisFruitLarge","BerlinFruitSmall","BerlinFruitMedium","BerlinFruitLarge"];
+                                        var typ = ["PropertyWrite","PropertyRead","ServiceInvoke","EventInvoke","EventSubscribe"];
+                                        var typ2 = ["Create","Read","Update","Delete"];
+                                        
+                                        for (var a in fruit) {
+                                           	 for (var b in typ) {
+                                           	 Things[client + fruit[a]].AddRunTimePermission({
+                                                allow: true /* BOOLEAN */,
+                                                principal: groupName /* STRING */,
+                                                resource: "*" /* STRING */,
+                                                type: typ[b] /* STRING */,
+                                                principalType: "Group" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        
+                                        for (var d in fruit) {
+                                        Things[client+fruit[d]].AddVisibilityPermission({
+                                        	principal: orgName /* STRING */,
+                                        	principalType: "Organization" /* STRING */
+                                        });
+                                        }
+                                        
+                                        for (var e in fruit) {
+                                            for (var f in typ2) {
+                                            Things[client+fruit[e]].AddDesignTimePermission({
+                                                allow: true /* BOOLEAN */,
+                                                principal: groupName /* STRING */,
+                                                type: typ2[f] /* STRING */,
+                                                principalType: "Group" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="assignGroupstoOrganizations">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var list = ["AG_H", "Cargill", "TFBV", "C_F"];
+                                        var type = ["Fruit", "Vegetable", "Meat", "Owner"];
+                                        for (var a in list) {
+                                            for (var b in type) {
+                                        Organizations[list[a] + "OwnerOrg"].AddMember({
+                                        	name: list[a] + "OwnerOrg" /* STRING */,
+                                        	member: list[a] + type[b] + "Group" /* STRING */,
+                                        	type: "Group" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="assignMeatUnitsPermissions">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var meat = ["MadridMeatSmall","MadridMeatMedium","MadridMeatLarge","RomeMeatSmall","RomeMeatMedium","RomeMeatLarge","LondonMeatSmall","LondonMeatMedium","LondonMeatLarge","ParisMeatSmall","ParisMeatMedium","ParisMeatLarge","BerlinMeatSmall","BerlinMeatMedium","BerlinMeatLarge"];
+                                        var typ = ["PropertyWrite","PropertyRead","ServiceInvoke","EventInvoke","EventSubscribe"];
+                                        var typ2 = ["Create","Read","Update","Delete"];
+                                        
+                                        for (var a in meat) {
+                                           	 for (var b in typ) {
+                                           	 Things[client + meat[a]].AddRunTimePermission({
+                                                allow: true /* BOOLEAN */,
+                                                principal: groupName /* STRING */,
+                                                resource: "*" /* STRING */,
+                                                type: typ[b] /* STRING */,
+                                                principalType: "Group" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        
+                                        for (var d in meat) {
+                                        Things[client + meat[d]].AddVisibilityPermission({
+                                        	principal: orgName /* STRING */,
+                                        	principalType: "Organization" /* STRING */
+                                        });
+                                        }
+                                        
+                                        for (var e in meat) {
+                                            for (var f in typ2) {
+                                            Things[client + meat[e]].AddDesignTimePermission({
+                                                allow: true /* BOOLEAN */,
+                                                principal: groupName /* STRING */,
+                                                type: typ2[f] /* STRING */,
+                                                principalType: "Group" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="assignPermissionsForUI">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var mas = ["FCS.MeatStorageMashup", "FCS.FruitStorageMashup", "FCS.VegetableStorageMashup", "FCS.MasterMashup", "FCS.StorageDetailsMashup", "FCS.StorageListMashup", "FCS.StorageListCollection"];
+                                        var thinglist = ["UtilThing", "FCS.UtilityThing.DZ", "WeatherRome", "WeatherParis", "WeatherLondon", "WeatherBerlin", "WeatherMadrid"];
+                                        var template = ["WeatherForcast_TT", "FruitUnit_TT", "BasicProperties_TT", "MeatUnit_TT", "VegetableUnit_TT"];
+                                        var media = ["FCSHomeIcon", "FCSMapPinSel", "FCSMapPin", "FCSstorageIcon", "FCSTwxLogo", "FCSUserIcon"];
+                                        var style = ["FCSMapPinSelStyle", "FCSMapPinStyle"];
+                                        var subsystem = ["WorkflowSubsystem", "PlatformSubsystem"];
+                                        var orgName = ["AG_HOwnerOrg", "CargillOwnerOrg", "TFBVOwnerOrg", "C_FOwnerOrg"];
+                                        var typ = ["PropertyWrite","PropertyRead","ServiceInvoke","EventInvoke","EventSubscribe"];
+                                        
+                                        // Assign visibility on template level 
+                                        for (var aa in template) {
+                                            for (var oo in orgName) {
+                                        ThingTemplates[template[aa]].AddVisibilityPermission({
+                                        	principal: orgName[oo] /* STRING */,
+                                        	principalType: "Organization" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        
+                                        
+                                        // Assign visibility and run time permissions to weather things and util things
+                                        for (var x in typ) {
+                                                for (var z in thinglist) {
+                                           	 Things[thinglist[z]].AddRunTimePermission({
+                                                allow: true /* BOOLEAN */,
+                                                principal: "AllGroupsPracticalExam" /* STRING */,
+                                                resource: "*" /* STRING */,
+                                                type: typ[x] /* STRING */,
+                                                principalType: "Group" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        
+                                        
+                                        for (var b in orgName) {
+                                            for (var bb in thinglist) {
+                                        Things[thinglist[bb]].AddVisibilityPermission({
+                                        	principal: orgName[b] /* STRING */,
+                                        	principalType: "Organization" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        
+                                        // Assign visibility to the UI entities created
+                                        for (var a in mas) {
+                                            for (var o in orgName) {
+                                        Mashups[mas[a]].AddVisibilityPermission({
+                                        	principal: orgName[o] /* STRING */,
+                                        	principalType: "Organization" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        
+                                        
+                                        for (var c in media) {
+                                            for (var d in orgName) {
+                                        MediaEntities[media[c]].AddVisibilityPermission({
+                                        	principal: orgName[d] /* STRING */,
+                                        	principalType: "Organization" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        
+                                        for (var e in style) {
+                                            for (var f in orgName) {
+                                        StyleDefinitions[style[e]].AddVisibilityPermission({
+                                        	principal: orgName[f] /* STRING */,
+                                        	principalType: "Organization" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        
+                                        
+                                        // Assign visibility to system objects
+                                        for (var g in orgName) {
+                                        Resources["AlertFunctions"].AddVisibilityPermission({
+                                        	principal: orgName[g] /* STRING */,
+                                        	principalType: "Organization" /* STRING */
+                                        });
+                                        }
+                                        
+                                        for (var h in subsystem) {
+                                            for (var i in orgName) {
+                                        Subsystems[subsystem[h]].AddVisibilityPermission({
+                                        	principal: orgName[i] /* STRING */,
+                                        	principalType: "Organization" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="assignProjectName">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var userlist = ["AG_HFruit", "AG_HVegetable", "AG_HMeat", "AG_HOwner", "CargillVegetable", "CargillMeat", "CargillFruit", "CargillOwner", "TFBVMeat", "TFBVFruit", "TFBVVegetable", "TFBVOwner", "C_FMeat", "C_FFruit", "C_FVegetable", "C_FOwner"];
+                                        var grouplist = ["AG_HFruitGroup", "AG_HVegetableGroup", "AG_HMeatGroup", "CargillVegetableGroup", "CargillMeatGroup", "CargillFruitGroup", "TFBVMeatGroup", "TFBVFruitGroup", "TFBVVegetableGroup", "C_FMeatGroup", "C_FFruitGroup", "C_FVegetableGroup"];
+                                        var orglist = ["AG_HOwnerOrg", "CargillOwnerOrg", "TFBVOwnerOrg", "C_FOwnerOrg"];
+                                        
+                                        for (var a in userlist) { 
+                                        Users[userlist[a]].SetProjectName({
+                                        	projectName: "FoodColdStorage" /* PROJECTNAME */
+                                        });
+                                        }
+                                        
+                                        for (var b in grouplist) {
+                                        Groups[grouplist[b]].SetProjectName({
+                                        	projectName: "FoodColdStorage" /* PROJECTNAME */
+                                        });
+                                        }
+                                        
+                                        for (var c in orglist) {
+                                        Organizations[orglist[c]].SetProjectName({
+                                        	projectName: "FoodColdStorage" /* PROJECTNAME */
+                                        });
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="assignUserstoGroups">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var allusers = ["AG_HFruit", "AG_HVegetable", "AG_HMeat", "AG_HOwner", "CargillVegetable", "CargillMeat", "CargillFruit", "CargillOwner", "TFBVMeat", "TFBVFruit", "TFBVVegetable", "TFBVOwner", "C_FMeat", "C_FFruit", "C_FVegetable", "C_FOwner"];
+                                        for (var a in allusers) {
+                                        Groups[allusers[a] + "Group"].AddMember({
+                                        	member: allusers[a] /* STRING */,
+                                        	type: "User" /* STRING */
+                                        });
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="assignVegetableUnitsPermissions">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var veg = ["MadridVegetableSmall","MadridVegetableMedium","MadridVegetableLarge","RomeVegetableSmall","RomeVegetableMedium","RomeVegetableLarge","LondonVegetableSmall","LondonVegetableMedium","LondonVegetableLarge","ParisVegetableSmall","ParisVegetableMedium","ParisVegetableLarge","BerlinVegetableSmall","BerlinVegetableMedium","BerlinVegetableLarge",];
+                                        var typ = ["PropertyWrite","PropertyRead","ServiceInvoke","EventInvoke","EventSubscribe"];
+                                        var typ2 = ["Create","Read","Update","Delete"];
+                                        
+                                        for (var a in veg) {
+                                           	 for (var b in typ) {
+                                           	 Things[client + veg[a]].AddRunTimePermission({
+                                                allow: true /* BOOLEAN */,
+                                                principal: groupName /* STRING */,
+                                                resource: "*" /* STRING */,
+                                                type: typ[b] /* STRING */,
+                                                principalType: "Group" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        
+                                        for (var d in veg) {
+                                        Things[client + veg[d]].AddVisibilityPermission({
+                                        	principal: orgName /* STRING */,
+                                        	principalType: "Organization" /* STRING */
+                                        });
+                                        }
+                                        
+                                        for (var e in veg) {
+                                            for (var f in typ2) {
+                                            Things[client + veg[e]].AddDesignTimePermission({
+                                                allow: true /* BOOLEAN */,
+                                                principal: groupName /* STRING */,
+                                                type: typ2[f] /* STRING */,
+                                                principalType: "Group" /* STRING */
+                                        });
+                                        }
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="createGroups">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var clients = ['AG_H','Cargill','C_F','TFBV'];
+                                        var type = ["Owner","Meat","Fruit","Vegetable"];
+                                        for (var a in clients) {
+                                            	for (var b in type) {
+                                        var params = {
+                                        	name: clients[a] + type[b] + "Group" /* STRING */,
+                                        	description: undefined /* STRING */,
+                                        	tags: undefined /* TAGS */
+                                        };
+                                        
+                                        // no return
+                                        Resources["EntityServices"].CreateGroup(params);
+                                        }
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="createOrganizations">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var clients = ['AG_H','Cargill','C_F','TFBV'];
+                                        for (var a in clients) {
+                                        var params = {
+                                        	topOUName: clients[a] + "OwnerOrg" /* STRING */,
+                                        	name: clients[a] + "OwnerOrg" /* STRING */,
+                                        	description: "Organization for client " + clients[a] /* STRING */,
+                                        	topOUDescription: undefined /* STRING */,
+                                        	tags: undefined /* TAGS */,
+                                        };
+                                        
+                                        // no return
+                                        Resources["EntityServices"].CreateOrganization(params);
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="createUsers">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        var clients = ['AG_H','Cargill','C_F','TFBV'];
+                                        var type = ["Owner","Meat","Fruit","Vegetable"];
+                                        for (var a in clients) {
+                                            	for (var b in type) {
+                                        var params = {
+                                        	password: "ThingworxExam" /* STRING */,
+                                        	name: clients[a] + type[b] /* STRING */,
+                                        	description: undefined /* STRING */,
+                                        	tags: undefined /* TAGS */
+                                        };
+                                        Resources["EntityServices"].CreateUser(params);
+                                        }
+                                        }
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                </ServiceImplementations>
+                <Subscriptions></Subscriptions>
+            </ThingShape>
+            <PropertyBindings></PropertyBindings>
+            <RemotePropertyBindings></RemotePropertyBindings>
+            <RemoteServiceBindings></RemoteServiceBindings>
+            <RemoteEventBindings></RemoteEventBindings>
+            <AlertConfigurations></AlertConfigurations>
+            <ImplementedShapes></ImplementedShapes>
+            <ThingProperties></ThingProperties>
+        </Thing>
+    </Things>
+</Entities>

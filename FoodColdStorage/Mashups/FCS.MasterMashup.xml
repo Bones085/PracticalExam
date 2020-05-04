@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ build="b222"
+ majorVersion="8"
+ minorVersion="5"
+ modelPersistenceProviderPackage="PostgresPersistenceProviderPackage"
+ revision="4"
+ schemaVersion="1053"
+ universal="password">
+    <Mashups>
+        <Mashup
+         aspect.isFlex="true"
+         aspect.isResponsive="true"
+         aspect.mashupType="target"
+         columns="0.0"
+         description=""
+         documentationContent=""
+         homeMashup=""
+         name="FCS.MasterMashup"
+         projectName="FoodColdStorage"
+         rows="0.0"
+         tags="">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions></RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility>
+                    <Principal
+                     isPermitted="true"
+                     name="AG_HOwnerOrg"
+                     type="Organization"></Principal>
+                    <Principal
+                     isPermitted="true"
+                     name="C_FOwnerOrg"
+                     type="Organization"></Principal>
+                    <Principal
+                     isPermitted="true"
+                     name="CargillOwnerOrg"
+                     type="Organization"></Principal>
+                    <Principal
+                     isPermitted="true"
+                     name="TFBVOwnerOrg"
+                     type="Organization"></Principal>
+                </Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+            <ParameterDefinitions></ParameterDefinitions>
+            <Things></Things>
+            <ThingShapes></ThingShapes>
+            <ThingTemplates></ThingTemplates>
+            <mashupContent>
+            <![CDATA[
+            {
+              "CustomMashupCss" : ".FCS_MainHeader {\n\tbox-shadow: 0px 0px 3px rgba(0,0,0, 0.5);\n    z-index: 999999 !important;\n}\n\n.FCS_MashSection.widget-content {\n    margin: 7.5px !important; \n}\n\n.FCS_Section.widget-content {\n    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px !important; \n    margin: 7.5px !important; \n}",
+              "Data" : {
+                "Session" : {
+                  "DataName" : "Session",
+                  "EntityName" : "",
+                  "EntityType" : "Session",
+                  "Id" : "session",
+                  "Services" : [ {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "SessionInterface",
+                    "Name" : "GetGlobalSessionValues",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "GetGlobalSessionValues"
+                  } ]
+                },
+                "UserExtensions" : {
+                  "DataName" : "UserExtensions",
+                  "EntityName" : "",
+                  "EntityType" : "UserExtensions",
+                  "Id" : "UserExtensions",
+                  "Services" : [ {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "UserExtensionInterface",
+                    "Name" : "GetCurrentUserExtensionProperties",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "GetCurrentUserExtensionProperties"
+                  } ]
+                }
+              },
+              "DataBindings" : [ {
+                "Id" : "9297b257-d9d9-4b94-a290-5c57b0ae8799",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "name",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Field",
+                  "TargetProperty" : "LabelText",
+                  "TargetPropertyBaseType" : "STRING",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "UserExtensions",
+                "SourceDetails" : "AllData",
+                "SourceId" : "UserExtensions",
+                "SourceSection" : "UserExtensions",
+                "TargetArea" : "UI",
+                "TargetId" : "ptcslabel-16",
+                "TargetSection" : ""
+              } ],
+              "DesignTimePermissions" : {
+                "Create" : [ ],
+                "Delete" : [ ],
+                "Metadata" : [ ],
+                "Read" : [ ],
+                "Update" : [ ]
+              },
+              "Events" : [ {
+                "EventHandlerArea" : "UI",
+                "EventHandlerId" : "navigationfunction-19",
+                "EventHandlerService" : "Navigate",
+                "EventTriggerArea" : "UI",
+                "EventTriggerEvent" : "Clicked",
+                "EventTriggerId" : "ptcsbutton-18",
+                "EventTriggerSection" : "",
+                "Id" : "dd064a49-60a5-4dee-9a9f-50bb22395c5a"
+              } ],
+              "RunTimePermissions" : {
+                "permissions" : [ ]
+              },
+              "UI" : {
+                "Properties" : {
+                  "Area" : "Mashup",
+                  "BGImageRepeat" : "no-repeat",
+                  "BGImageSize" : "auto",
+                  "DisplayName" : "Mashup",
+                  "DropShadow" : false,
+                  "Font" : "Arial, Helvetica",
+                  "Height" : 768,
+                  "Id" : "mashup-root",
+                  "Left" : 0,
+                  "MaxWidth" : 0,
+                  "MinHeight" : 0,
+                  "MinWidth" : 0,
+                  "ResponsiveLayout" : true,
+                  "ShowDataLoading" : true,
+                  "Style" : {
+                    "backgroundColor" : "rgba(255,255,255,1)",
+                    "displayString" : "",
+                    "fontEmphasisBold" : false,
+                    "fontEmphasisItalic" : false,
+                    "fontEmphasisUnderline" : false,
+                    "foregroundColor" : "",
+                    "image" : "",
+                    "lineColor" : "",
+                    "lineStyle" : "solid",
+                    "lineThickness" : 1,
+                    "secondaryBackgroundColor" : "",
+                    "textSize" : "normal"
+                  },
+                  "StyleProperties" : {
+                    "data" : {
+                      "ptcsbutton-18" : {
+                        "parts" : {
+                          "$" : {
+                            "hover" : {
+                              "background" : "inherit",
+                              "border-color" : "inherit"
+                            },
+                            "pressed" : {
+                              "background" : "inherit",
+                              "border-color" : "inherit"
+                            },
+                            "selected" : {
+                              "background" : "inherit",
+                              "border-color" : "inherit"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-button"
+                      },
+                      "ptcslabel-10" : {
+                        "parts" : {
+                          "$" : {
+                            "$" : {
+                              "color" : "#ffffff",
+                              "font-size" : "16px"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-label"
+                      }
+                    },
+                    "meta" : {
+                      "type" : "WidgetStyler",
+                      "version" : "1.0"
+                    }
+                  },
+                  "StyleTheme" : "PTC Convergence Theme",
+                  "Title" : "Food Cold Storage",
+                  "Top" : 0,
+                  "Type" : "targetmashup",
+                  "UseThemeForHybrids" : false,
+                  "Visible" : true,
+                  "Width" : 1024,
+                  "WindowStyle" : "DefaultMasterWindowStyle",
+                  "Z-index" : 10,
+                  "__TypeDisplayName" : "Master Mashup",
+                  "align-content" : "stretch",
+                  "align-items" : "stretch",
+                  "flex-basis" : "auto",
+                  "flex-direction" : "column",
+                  "flex-grow" : 1,
+                  "flex-height" : 0,
+                  "flex-shrink" : 0,
+                  "flex-width" : 0,
+                  "flex-wrap" : "nowrap",
+                  "id_index" : 19,
+                  "justify-content" : "flex-start",
+                  "supportsAutoResize" : true
+                },
+                "Widgets" : [ {
+                  "Properties" : {
+                    "Area" : "UI",
+                    "DisplayName" : "Blank",
+                    "EnableExpandCollapse" : false,
+                    "Expanded" : true,
+                    "Id" : "flexcontainer-1",
+                    "LastContainer" : true,
+                    "ResponsiveLayout" : true,
+                    "ShowDataLoading" : true,
+                    "ShowExpandCollapseTab" : false,
+                    "SourceURL" : "",
+                    "Style" : "DefaultContainerStyle",
+                    "StyleProperties" : { },
+                    "Type" : "flexcontainer",
+                    "UseTheme" : false,
+                    "Visible" : true,
+                    "Z-index" : 10,
+                    "__TypeDisplayName" : "Container",
+                    "align-content" : "stretch",
+                    "align-items" : "stretch",
+                    "flex-basis" : "auto",
+                    "flex-direction" : "column",
+                    "flex-grow" : "1",
+                    "flex-height" : 0,
+                    "flex-max-height" : "",
+                    "flex-max-width" : "",
+                    "flex-min-height" : "",
+                    "flex-min-width" : "",
+                    "flex-shrink" : "0",
+                    "flex-size" : "default",
+                    "flex-width" : 0,
+                    "flex-wrap" : "nowrap",
+                    "iconClass" : "widgets-flexcontainer",
+                    "isLocked" : true,
+                    "justify-content" : "flex-start",
+                    "positioning" : "responsive",
+                    "userCannotRemove" : false
+                  },
+                  "Widgets" : [ {
+                    "Properties" : {
+                      "Area" : "UI",
+                      "CustomClass" : "FCS_MainHeader",
+                      "DisplayName" : "container-4",
+                      "EnableExpandCollapse" : false,
+                      "Expanded" : true,
+                      "Id" : "flexcontainer-4",
+                      "LastContainer" : false,
+                      "ResponsiveLayout" : false,
+                      "ShowDataLoading" : true,
+                      "ShowExpandCollapseTab" : false,
+                      "SourceURL" : "",
+                      "Style" : "DefaultContainerStyle",
+                      "StyleProperties" : { },
+                      "Type" : "flexcontainer",
+                      "UseTheme" : true,
+                      "Visible" : true,
+                      "Z-index" : 10,
+                      "__TypeDisplayName" : "Responsive Container",
+                      "align-content" : "flex-start",
+                      "align-items" : "flex-start",
+                      "flex-basis" : "auto",
+                      "flex-direction" : "row",
+                      "flex-grow" : "1",
+                      "flex-max-height" : "64px",
+                      "flex-max-width" : "",
+                      "flex-min-height" : "64px",
+                      "flex-min-width" : "",
+                      "flex-shrink" : "1",
+                      "flex-size" : "fixed",
+                      "flex-wrap" : "nowrap",
+                      "iconClass" : "widgets-flexcontainer-fixed",
+                      "isLocked" : false,
+                      "justify-content" : "flex-start",
+                      "positioning" : "responsive",
+                      "userCannotRemove" : false
+                    },
+                    "Widgets" : [ {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisplayName" : "container-6",
+                        "EnableExpandCollapse" : false,
+                        "Expanded" : true,
+                        "Id" : "flexcontainer-6",
+                        "LastContainer" : false,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "ShowExpandCollapseTab" : false,
+                        "SourceURL" : "",
+                        "Style" : "DefaultContainerStyle",
+                        "StyleProperties" : {
+                          "global-color-bg-primary" : "#3b4550"
+                        },
+                        "Type" : "flexcontainer",
+                        "UseTheme" : true,
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Responsive Container",
+                        "align-content" : "flex-start",
+                        "align-items" : "flex-start",
+                        "flex-basis" : "auto",
+                        "flex-direction" : "row",
+                        "flex-grow" : "1",
+                        "flex-max-height" : "",
+                        "flex-max-width" : "335px",
+                        "flex-min-height" : "",
+                        "flex-min-width" : "335px",
+                        "flex-shrink" : "1",
+                        "flex-size" : "fixed",
+                        "flex-wrap" : "nowrap",
+                        "iconClass" : "widgets-flexcontainer-fixed",
+                        "isLocked" : false,
+                        "justify-content" : "flex-start",
+                        "positioning" : "responsive",
+                        "userCannotRemove" : false
+                      },
+                      "Widgets" : [ {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "ContainerClass" : "",
+                          "DisplayName" : "panel-9",
+                          "Height" : 200,
+                          "HideScrollbars" : false,
+                          "HorizontalAnchor" : "left",
+                          "Id" : "panel-9",
+                          "LastContainer" : false,
+                          "Left" : 90,
+                          "ResponsiveLayout" : true,
+                          "ShowDataLoading" : true,
+                          "Style" : "DefaultContainerStyle",
+                          "Top" : 25,
+                          "Type" : "panel",
+                          "VerticalAnchor" : "top",
+                          "Visible" : true,
+                          "Width" : 300,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Panel"
+                        },
+                        "Widgets" : [ {
+                          "Properties" : {
+                            "Area" : "UI",
+                            "DisclosureControl" : "show-more",
+                            "DisplayName" : "ptcslabel-10",
+                            "Height" : 34,
+                            "HorizontalAlignment" : "left",
+                            "Id" : "ptcslabel-10",
+                            "LabelText" : "FOOD COLD STORAGE",
+                            "LabelType" : "label",
+                            "LastContainer" : false,
+                            "Left" : 49,
+                            "MultiLine" : false,
+                            "ResponsiveLayout" : false,
+                            "ShowDataLoading" : true,
+                            "Top" : 15,
+                            "Type" : "ptcslabel",
+                            "UseTheme" : true,
+                            "VerticalAlignment" : "center",
+                            "Visible" : true,
+                            "Width" : 240,
+                            "Z-index" : 10,
+                            "__TypeDisplayName" : "Label",
+                            "overflowShowLessTxt" : "[[showLess]]",
+                            "overflowShowMoreTxt" : "[[showMore]]"
+                          },
+                          "Widgets" : [ ]
+                        }, {
+                          "Properties" : {
+                            "AlternateText" : "",
+                            "Area" : "UI",
+                            "ContainerDim" : false,
+                            "DisplayName" : "ptcsimage-11",
+                            "Height" : 22,
+                            "Id" : "ptcsimage-11",
+                            "LastContainer" : false,
+                            "Left" : 15,
+                            "Position" : "top",
+                            "PreventCaching" : false,
+                            "ResponsiveLayout" : false,
+                            "Scaling" : "fit-x",
+                            "ShowDataLoading" : true,
+                            "SourceURL" : "/Thingworx/MediaEntities/FCSTwxLogo",
+                            "Top" : 20,
+                            "Type" : "ptcsimage",
+                            "UseTheme" : true,
+                            "Visible" : true,
+                            "Width" : 22,
+                            "Z-index" : 10,
+                            "__TypeDisplayName" : "Image"
+                          },
+                          "Widgets" : [ ]
+                        } ]
+                      } ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisplayName" : "container-8",
+                        "EnableExpandCollapse" : false,
+                        "Expanded" : true,
+                        "Id" : "flexcontainer-8",
+                        "LastContainer" : false,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "ShowExpandCollapseTab" : false,
+                        "SourceURL" : "",
+                        "Style" : "DefaultContainerStyle",
+                        "StyleProperties" : {
+                          "global-color-bg-primary" : "#6ebe4b"
+                        },
+                        "Type" : "flexcontainer",
+                        "UseTheme" : true,
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Responsive Container",
+                        "align-content" : "flex-start",
+                        "align-items" : "flex-start",
+                        "flex-basis" : "auto",
+                        "flex-direction" : "row",
+                        "flex-grow" : "1",
+                        "flex-max-height" : "",
+                        "flex-max-width" : "5px",
+                        "flex-min-height" : "",
+                        "flex-min-width" : "5px",
+                        "flex-shrink" : "1",
+                        "flex-size" : "fixed",
+                        "flex-wrap" : "nowrap",
+                        "iconClass" : "widgets-flexcontainer-fixed",
+                        "isLocked" : false,
+                        "justify-content" : "flex-start",
+                        "positioning" : "responsive",
+                        "userCannotRemove" : false
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisplayName" : "container-17",
+                        "EnableExpandCollapse" : false,
+                        "Expanded" : true,
+                        "Id" : "flexcontainer-17",
+                        "LastContainer" : false,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "ShowExpandCollapseTab" : false,
+                        "SourceURL" : "",
+                        "Style" : "DefaultContainerStyle",
+                        "StyleProperties" : { },
+                        "Type" : "flexcontainer",
+                        "UseTheme" : true,
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Responsive Container",
+                        "align-content" : "flex-start",
+                        "align-items" : "center",
+                        "flex-basis" : "auto",
+                        "flex-direction" : "row",
+                        "flex-grow" : "1",
+                        "flex-max-height" : "",
+                        "flex-max-width" : "",
+                        "flex-min-height" : "",
+                        "flex-min-width" : "",
+                        "flex-shrink" : "1",
+                        "flex-size" : "default",
+                        "flex-wrap" : "nowrap",
+                        "iconClass" : "widgets-flexcontainer",
+                        "isLocked" : false,
+                        "justify-content" : "flex-start",
+                        "positioning" : "responsive",
+                        "userCannotRemove" : false
+                      },
+                      "Widgets" : [ {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "ButtonType" : "transparent",
+                          "ContextID" : "",
+                          "Disabled" : false,
+                          "DisplayName" : "ptcs-button-18",
+                          "Icon" : "/Thingworx/MediaEntities/FCSHomeIcon",
+                          "Id" : "ptcsbutton-18",
+                          "Label" : "",
+                          "LabelAlignment" : "center",
+                          "LastContainer" : false,
+                          "Left" : 45,
+                          "Margin" : "5",
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : true,
+                          "TabSequence" : 0,
+                          "ToolTipField" : "",
+                          "ToolTipStyle" : "DefaultTooltipStyle",
+                          "Top" : 25,
+                          "Type" : "ptcsbutton",
+                          "UseTheme" : true,
+                          "Visible" : true,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Button",
+                          "__supportsTooltip" : true
+                        },
+                        "Widgets" : [ ]
+                      } ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisplayName" : "container-5",
+                        "EnableExpandCollapse" : false,
+                        "Expanded" : true,
+                        "Id" : "flexcontainer-5",
+                        "LastContainer" : false,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "ShowExpandCollapseTab" : false,
+                        "SourceURL" : "",
+                        "Style" : "DefaultContainerStyle",
+                        "StyleProperties" : { },
+                        "Type" : "flexcontainer",
+                        "UseTheme" : true,
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Responsive Container",
+                        "align-content" : "flex-start",
+                        "align-items" : "flex-end",
+                        "flex-basis" : "auto",
+                        "flex-direction" : "column",
+                        "flex-grow" : "1",
+                        "flex-max-height" : "",
+                        "flex-max-width" : "",
+                        "flex-min-height" : "",
+                        "flex-min-width" : "",
+                        "flex-shrink" : "1",
+                        "flex-size" : "default",
+                        "flex-wrap" : "nowrap",
+                        "iconClass" : "widgets-flexcontainer",
+                        "isLocked" : false,
+                        "justify-content" : "center",
+                        "positioning" : "responsive",
+                        "userCannotRemove" : false
+                      },
+                      "Widgets" : [ {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DisclosureControl" : "show-more",
+                          "DisplayName" : "ptcslabel-15",
+                          "HorizontalAlignment" : "left",
+                          "Id" : "ptcslabel-15",
+                          "LabelText" : "WELCOME",
+                          "LabelType" : "label",
+                          "LastContainer" : false,
+                          "Left" : 180,
+                          "Margin" : "10 10 0 0",
+                          "MultiLine" : false,
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : true,
+                          "Top" : 25,
+                          "Type" : "ptcslabel",
+                          "UseTheme" : true,
+                          "VerticalAlignment" : "flex-start",
+                          "Visible" : true,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Label",
+                          "overflowShowLessTxt" : "[[showLess]]",
+                          "overflowShowMoreTxt" : "[[showMore]]"
+                        },
+                        "Widgets" : [ ]
+                      }, {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "DisclosureControl" : "show-more",
+                          "DisplayName" : "ptcslabel-16",
+                          "HorizontalAlignment" : "left",
+                          "Id" : "ptcslabel-16",
+                          "LabelText" : "Label",
+                          "LabelType" : "label",
+                          "LastContainer" : false,
+                          "Left" : 130,
+                          "Margin" : "0 10 10 0",
+                          "MultiLine" : false,
+                          "ResponsiveLayout" : false,
+                          "ShowDataLoading" : true,
+                          "Top" : 25,
+                          "Type" : "ptcslabel",
+                          "UseTheme" : true,
+                          "VerticalAlignment" : "flex-start",
+                          "Visible" : true,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Label",
+                          "overflowShowLessTxt" : "[[showLess]]",
+                          "overflowShowMoreTxt" : "[[showMore]]"
+                        },
+                        "Widgets" : [ ]
+                      } ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisplayName" : "container-7",
+                        "EnableExpandCollapse" : false,
+                        "Expanded" : true,
+                        "Id" : "flexcontainer-7",
+                        "LastContainer" : false,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "ShowExpandCollapseTab" : false,
+                        "SourceURL" : "",
+                        "Style" : "DefaultContainerStyle",
+                        "StyleProperties" : { },
+                        "Type" : "flexcontainer",
+                        "UseTheme" : true,
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Responsive Container",
+                        "align-content" : "flex-start",
+                        "align-items" : "flex-start",
+                        "flex-basis" : "auto",
+                        "flex-direction" : "row",
+                        "flex-grow" : "1",
+                        "flex-max-height" : "",
+                        "flex-max-width" : "60px",
+                        "flex-min-height" : "",
+                        "flex-min-width" : "60px",
+                        "flex-shrink" : "1",
+                        "flex-size" : "fixed",
+                        "flex-wrap" : "nowrap",
+                        "iconClass" : "widgets-flexcontainer-fixed",
+                        "isLocked" : false,
+                        "justify-content" : "flex-start",
+                        "positioning" : "responsive",
+                        "userCannotRemove" : false
+                      },
+                      "Widgets" : [ {
+                        "Properties" : {
+                          "Area" : "UI",
+                          "ContainerClass" : "",
+                          "DisplayName" : "panel-12",
+                          "Height" : 200,
+                          "HideScrollbars" : true,
+                          "HorizontalAnchor" : "left",
+                          "Id" : "panel-12",
+                          "LastContainer" : false,
+                          "Left" : 110,
+                          "ResponsiveLayout" : true,
+                          "ShowDataLoading" : true,
+                          "Style" : "DefaultContainerStyle",
+                          "Top" : 15,
+                          "Type" : "panel",
+                          "VerticalAnchor" : "top",
+                          "Visible" : true,
+                          "Width" : 300,
+                          "Z-index" : 10,
+                          "__TypeDisplayName" : "Panel"
+                        },
+                        "Widgets" : [ {
+                          "Properties" : {
+                            "AlternateText" : "",
+                            "Area" : "UI",
+                            "ContainerDim" : false,
+                            "DisplayName" : "ptcsimage-13",
+                            "Height" : 22,
+                            "Id" : "ptcsimage-13",
+                            "LastContainer" : false,
+                            "Left" : 11.5,
+                            "Position" : "top",
+                            "PreventCaching" : false,
+                            "ResponsiveLayout" : false,
+                            "Scaling" : "fit-x",
+                            "ShowDataLoading" : true,
+                            "SourceURL" : "/Thingworx/MediaEntities/FCSUserIcon",
+                            "Top" : 21,
+                            "Type" : "ptcsimage",
+                            "UseTheme" : true,
+                            "Visible" : true,
+                            "Width" : 22,
+                            "Z-index" : 10,
+                            "__TypeDisplayName" : "Image"
+                          },
+                          "Widgets" : [ ]
+                        }, {
+                          "Properties" : {
+                            "Area" : "UI",
+                            "DisplayName" : "shape-14",
+                            "DynamicFillOrientation" : "vertical",
+                            "DynamicRangeMaximum" : 100,
+                            "DynamicRangeMinimum" : 0,
+                            "EnableDynamicFill" : false,
+                            "GradientOrientation" : "vertical",
+                            "GradientType" : "linear",
+                            "Height" : 44,
+                            "Id" : "shape-14",
+                            "LastContainer" : false,
+                            "Left" : 0,
+                            "RectangleCornerRadius" : 10,
+                            "ResponsiveLayout" : false,
+                            "ShapeFormatter_StateParameters" : [ ],
+                            "ShapeStyle" : {
+                              "backgroundColor" : "rgba(192,192,192,1)",
+                              "displayString" : "",
+                              "fontEmphasisBold" : false,
+                              "fontEmphasisItalic" : false,
+                              "fontEmphasisUnderline" : false,
+                              "foregroundColor" : "",
+                              "image" : "",
+                              "lineColor" : "",
+                              "lineStyle" : "solid",
+                              "lineThickness" : 1,
+                              "secondaryBackgroundColor" : "",
+                              "textSize" : "normal"
+                            },
+                            "ShapeType" : "rectangle",
+                            "ShowDataLoading" : true,
+                            "Top" : 10,
+                            "Type" : "shape",
+                            "UnfilledBackgroundStyle" : "DefaultShapeUnfilledBackgroundStyle",
+                            "Visible" : true,
+                            "Width" : 1,
+                            "Z-index" : 10,
+                            "__TypeDisplayName" : "Shape"
+                          },
+                          "Widgets" : [ ]
+                        } ]
+                      } ]
+                    } ]
+                  }, {
+                    "Properties" : {
+                      "Area" : "UI",
+                      "DisplayName" : "container-3",
+                      "EnableExpandCollapse" : false,
+                      "Expanded" : true,
+                      "Id" : "flexcontainer-3",
+                      "LastContainer" : true,
+                      "ResponsiveLayout" : false,
+                      "ShowDataLoading" : true,
+                      "ShowExpandCollapseTab" : false,
+                      "SourceURL" : "",
+                      "Style" : "DefaultContainerStyle",
+                      "StyleProperties" : { },
+                      "Type" : "flexcontainer",
+                      "UseTheme" : false,
+                      "Visible" : true,
+                      "Z-index" : 10,
+                      "__TypeDisplayName" : "Container",
+                      "align-content" : "stretch",
+                      "align-items" : "center",
+                      "flex-basis" : "auto",
+                      "flex-direction" : "column",
+                      "flex-grow" : "1",
+                      "flex-height" : 0,
+                      "flex-max-height" : "",
+                      "flex-max-width" : "",
+                      "flex-min-height" : "",
+                      "flex-min-width" : "",
+                      "flex-shrink" : "0",
+                      "flex-size" : "default",
+                      "flex-width" : 0,
+                      "flex-wrap" : "nowrap",
+                      "iconClass" : "widgets-flexcontainer",
+                      "isLocked" : true,
+                      "justify-content" : "center",
+                      "positioning" : "responsive",
+                      "userCannotRemove" : false
+                    },
+                    "Widgets" : [ {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisplayName" : "Page Mashup",
+                        "Height" : 300,
+                        "Id" : "pagemashupcontainer-2",
+                        "LastContainer" : false,
+                        "Left" : 0,
+                        "Name" : "",
+                        "ResponsiveLayout" : true,
+                        "ShowDataLoading" : true,
+                        "Top" : 0,
+                        "Type" : "pagemashupcontainer",
+                        "Visible" : true,
+                        "Width" : 400,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Page Mashup Container"
+                      },
+                      "Widgets" : [ ]
+                    } ]
+                  } ]
+                }, {
+                  "Properties" : {
+                    "Area" : "UI",
+                    "ClickOutsideToClose" : false,
+                    "CloseButton" : true,
+                    "DisplayName" : "home",
+                    "Id" : "navigationfunction-19",
+                    "LastContainer" : false,
+                    "Left" : 0,
+                    "MissingMashupMessage" : "",
+                    "PopupHeight" : "0",
+                    "PopupScrollbar" : "auto",
+                    "PopupTitle" : "",
+                    "PopupWidth" : "0",
+                    "ReloadOnReplace" : false,
+                    "ShowDataLoading" : true,
+                    "TargetMashup" : "FCS.StorageListMashup",
+                    "TargetWindow" : "new",
+                    "TargetWindowType" : "replace",
+                    "Text" : "tw.navigationfunction-ide.properties.text.default-value",
+                    "Top" : 0,
+                    "Type" : "navigationfunction",
+                    "Visible" : true,
+                    "Z-index" : 10,
+                    "__TypeDisplayName" : "navigationfunction",
+                    "_currentParameterDefs" : [ ],
+                    "isLocked" : false
+                  },
+                  "Widgets" : [ ]
+                } ]
+              },
+              "mashupType" : "targetmashup"
+            }
+            ]]>
+            </mashupContent>
+            <preview></preview>
+        </Mashup>
+    </Mashups>
+</Entities>
